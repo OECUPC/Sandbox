@@ -1,0 +1,10 @@
+services:
+  sandbox:
+    container_name: sandbox
+    build:
+      context: .
+      dockerfile: containers/sandbox/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/home
